@@ -1,0 +1,9 @@
+<section id="forgot" class="forgot user-form container" ng-controller="RetrieveCtrl">
+    <h1>Sign In</h1>
+    <form name="forgot" ng-submit="submit()">
+    	<input tabindex="1" type="text" name="email" id="email" placeholder="Please enter your email address" ng-model="user.email" ng-required="true" ng-pattern="regex.email" field-behavior />
+        <input type="submit" value="Reset Password" ng-disabled="forgot.$invalid" />
+    </form>
+    <a href="#/sign-up">Create an Account</a>
+    <a href="#/">Sign In</a>
+</section>

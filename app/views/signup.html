@@ -1,0 +1,19 @@
+<section id="signup" class="signup user-form container" ng-controller="SignUpCtrl">
+    <h1>Account Creation</h1>
+    <form name="signup" ng-submit="submit()" novalidation >
+    	<fieldset class="user-info">
+    		<h2>About You</h2>
+    		<input tabindex="1" type="text" id="name" name="name" placeholder="Name" ng-model="user.name" ng-required="true" field-behavior />
+    		<input type="text" name="email" id="email" placeholder="Email" ng-model="user.email" ng-required="true" ng-pattern="regex.email" field-behavior />
+    	</fieldset>
+    	<fieldset class="account">
+    		<h2>Account Details</h2>
+	        <input type="text" name="username" id="username" placeholder="Username" ng-model="user.username" ng-required="true" ng-pattern="regex.username" field-behavior />
+	        <input type="password" name="password" id="password" placeholder="Password" ng-model="user.secret" ng-required="true" ng-pattern="regex.secret" field-behavior />
+	        <input type="password" name="repassword" id="repassword" placeholder="Confirm Password" ng-model="repassword" confirm-it="password" field-behavior ng-required="true" class="ng-invalid" ng-show="signup.password.$valid" />
+	    </fieldset>
+        <input type="submit" value="Create Account" ng-disabled="signup.$invalid" />
+    </form>
+    <a href="#/retrieve">Forgot your password?</a>
+    <a href="#/">Sign in</a>
+</section>
