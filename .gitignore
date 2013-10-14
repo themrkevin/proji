@@ -5,7 +5,3 @@ dist
 app/bower_components
 test
 Gruntfile.js
-.bowerrc
-.editorconfig
-.gitattributes
-.jshintrc
