@@ -1,6 +1,6 @@
 <section id="signup" class="signup user-form container" ng-controller="SignUpCtrl">
     <h1>Account Creation</h1>
-    <form name="signup" ng-submit="submit()" novalidation >
+    <form name="signup" ng-submit="userCreate()" novalidation >
     	<fieldset class="user-info">
     		<h2>About You</h2>
     		<input tabindex="1" type="text" id="name" name="name" placeholder="Name" ng-model="user.name" ng-required="true" field-behavior />
