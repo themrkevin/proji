@@ -2,7 +2,8 @@
   "name": "proji",
   "version": "0.0.0",
   "dependencies": {
-    "express": "~3.4.1"
+    "express": "~3.4.1",
+    "mongoose": "~3.6.20"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
