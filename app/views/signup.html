@@ -12,6 +12,7 @@
 	        <input type="password" name="password" id="password" placeholder="Password" ng-model="user.secret" ng-required="true" ng-pattern="regex.secret" field-behavior />
 	        <input type="password" name="repassword" id="repassword" placeholder="Confirm Password" ng-model="repassword" confirm-it="password" field-behavior ng-required="true" class="ng-invalid" ng-show="signup.password.$valid" />
 	    </fieldset>
+        <p><small>Warning: Work in progress. No encryption has been setup yet, don't use a real password</small></p>
         <input type="submit" value="Create Account" ng-disabled="signup.$invalid" />
     </form>
     <a href="#/retrieve">Forgot your password?</a>

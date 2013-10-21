@@ -9,7 +9,10 @@ proji.controller('SignUpCtrl', function($scope, $http, User, Regex) {
 			url: '/sign-up/yay',
 			data: $scope.user
 		}).success(function(data, status, headers, config) {
-			console.log('Success!');
+			console.log('Success!', data);
+			// if( data.result === 'username exists') {
+
+			// }
 		}).error(function(data, status, headers, config) {
 			console.log('Error:', status);
 		});

@@ -19,7 +19,7 @@ app.post('/sign-up/yay', function(req, res) {
 		req.user = docs[0];
 		if(req.user) {
 			console.log(b.username + ' exists. Please choose a new handle.');
-			return false;
+			res.send({ result: 'username exists' });
 		} else {
 			console.log(b.username + ' not found. Creating user.');
 			new User({
@@ -29,15 +29,11 @@ app.post('/sign-up/yay', function(req, res) {
 				email: b.email
 			}).save(function(err, user) {
 				if(err) res.json(err);
-				console.log(user);
+				console.log(b.username + 'created.');
+				res.send({ result: 'created' });
 			});
 		}
 	});
-	// if() {
-	// 	console.log(b.username + ' exists');
-	// } else {
-	// 	console.log(b.username + ' not found');
-	// }
 });
 
 http.createServer(app).listen(app.PORT, function() {
