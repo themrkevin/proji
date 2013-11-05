@@ -4,15 +4,16 @@ proji.controller('SignUpCtrl', function($scope, $http, User, Regex) {
 	$scope.user = User;
 	$scope.regex = Regex;
 	$scope.userCreate = function() {
+		var errorMsg;
+
 		$http({
 			method: 'POST',
 			url: '/sign-up/yay',
 			data: $scope.user
 		}).success(function(data, status, headers, config) {
-			console.log('Success!', data);
-			// if( data.result === 'username exists') {
-
-			// }
+			if( data.result === 'username exists') {
+				console.log('result:', data.result);
+			}
 		}).error(function(data, status, headers, config) {
 			console.log('Error:', status);
 		});

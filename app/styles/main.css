@@ -1,85 +1,33 @@
-* {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing:    border-box;
-    box-sizing:         border-box;
-}
-body {
-    background: #fafafa;
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: #333;
-    font-size: 13px;
-}
 h1 {
-    font-size: 2em;
-    line-height: 1.4em;
-    margin: 0.5em 0;
-}
+  font-size: 2em;
+  line-height: 1.4em;
+  margin: 0.5em 0; }
+
 h2 {
-    font-size: 1.5em;
-    line-height: 1.2em;
-    margin: 0.1 0 0.25em 0;
-}
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
+  font-size: 1.5em;
+  line-height: 1.2em;
+  margin: 0.1 0 0.25em 0; }
+
 .user-form {
-    width: 350px;
-    margin: 1em auto;
-    padding: 0.5em 2em;
-    background: #f1f1f1;
-    border-radius: 4px;
-    box-shadow: 1px 2px 2px rgba(0,0,0,0.2);
-}
-.user-form fieldset {
-    border: none;
-    margin: 1em 0;
-    padding: 1em 0 0;
-    border-top: 1px solid #ccc;
-}
-.user-form h2 {
-    color: #666;
-}
-.user-form input {
-    border: none;
-    border-radius: 3px;
-    padding: 0.8em;
-    margin: 0.5em 0;
-    font-size: 1em;
-}
-:focus {
-    outline: none;
-}
-.user-form input.ng-dirty.ng-valid {
-    background: url(../images/faces-01.png) #fff 97% center no-repeat;
-}
-.user-form input.ng-dirty.ng-invalid {
-    background: url(../images/faces-02.png) #fff 97% center no-repeat;
-}
-.user-form input[type="text"],
-.user-form input[type="password"] {
-    width: 100%;
-    position: relative;
-    padding-right: 3em;
-}
-.user-form input[type="submit"] {
-    background: #0088cb;
-    color: #fff;
-    border: 1px solid #017ab4;
-    box-shadow: 0px 2px 0px #016a9d;
-    cursor: pointer;
-}
-.user-form input[type="submit"][disabled] {
-    opacity: 0.5;
-    color: #016a9d;
-    cursor: default;
-}
-.user-form a {
-    display: block;
-    margin: 0.25em 0;   
-    padding: 0.25em 0;
-    text-decoration: none;
-    color: #0088cb;
-}
+  width: 350px;
+  margin: 1em auto;
+  padding: 0.5em 2em;
+  background: #f1f1f1;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #fafafa;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  font-size: 13px; }
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #cccccc;
+  color: black;
+  padding: 0.2em 0; }

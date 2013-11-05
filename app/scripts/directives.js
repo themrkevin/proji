@@ -26,3 +26,6 @@ proji.directive('confirmIt', function() {
 		}
 	}
 });
+
+proji.directive('responseRejected', function() {
+});
